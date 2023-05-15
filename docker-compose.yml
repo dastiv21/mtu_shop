@@ -2,8 +2,8 @@ version: '3'
 
 services:
   frontend:
-#    image: your_frontend_image
-    build: ./frontend/
+    image: rahys/frontend_app:latest
+#    build: ./frontend/
     ports:
       - "3000:3000"
     depends_on:
