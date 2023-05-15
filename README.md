@@ -12,4 +12,3 @@ The frontend URL is **localhost:3000**
 
 All the required backedn services will also be running at this point
 
-###End
