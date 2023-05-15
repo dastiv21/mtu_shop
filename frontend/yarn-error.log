@@ -1,0 +1,82 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/rahys/opt/anaconda3/bin:/Users/rahys/opt/anaconda3/condabin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/local/mysql/support-files:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/rahys/Developer/flutter/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-2.0.3.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141517:19)
+      at Object.onceWrapper (node:events:627:28)
+      at ClientRequest.emit (node:events:513:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:838:9)
+      at Object.onceWrapper (node:events:627:28)
+      at TLSSocket.emit (node:events:525:35)
+      at Socket._onTimeout (node:net:562:8)
+      at listOnTimeout (node:internal/timers:564:17)
+      at process.processTimers (node:internal/timers:507:7)
+
+npm manifest: 
+  {
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@emotion/react": "^11.11.0",
+      "@mantine/carousel": "^6.0.10",
+      "@mantine/core": "^6.0.10",
+      "@mantine/dates": "^6.0.10",
+      "@mantine/dropzone": "^6.0.10",
+      "@mantine/form": "^6.0.10",
+      "@mantine/hooks": "^6.0.10",
+      "@mantine/modals": "^6.0.10",
+      "@mantine/notifications": "^6.0.10",
+      "@tabler/icons-react": "^2.17.0",
+      "@types/js-cookie": "^3.0.3",
+      "@types/node": "20.1.1",
+      "@types/react": "18.2.6",
+      "@types/react-dom": "18.2.4",
+      "axios": "^1.4.0",
+      "dayjs": "^1.11.7",
+      "embla-carousel-react": "^8.0.0-rc03",
+      "eslint": "8.40.0",
+      "eslint-config-next": "13.4.1",
+      "iconsax-react": "^0.0.8",
+      "jotai": "^2.1.0",
+      "js-cookie": "^3.0.5",
+      "moment": "^2.29.4",
+      "next": "13.4.1",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-images-viewer": "^1.7.1",
+      "react-query": "^3.39.3",
+      "typescript": "5.0.4"
+    },
+    "devDependencies": {
+      "@iconify/react": "^4.1.0",
+      "autoprefixer": "^10.4.14",
+      "postcss": "^8.4.23",
+      "tailwindcss": "^3.3.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

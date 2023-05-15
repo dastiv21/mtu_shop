@@ -1,0 +1,12 @@
+# Ignore editor and system files
+.vscode/
+.git/
+.gitignore
+docker-compose.yml
+
+# Ignore build artifacts
+build/
+dist/
+node_modules/*
+node_modules
+.env
