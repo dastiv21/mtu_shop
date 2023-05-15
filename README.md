@@ -1,8 +1,8 @@
 # mtu_shop
 
-To run the app use:
+This app require **Docker**
 
-This app requires **Docker**
+To run the app use:
 
 `$ docker-compose up`
 
