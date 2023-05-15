@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  frontend:
+    image: rahys/frontend_app:latest
+#    build: ./frontend/
+    ports:
+      - "3000:3000"
+    depends_on:
+      - apigateway
+      - user-service
+    env_file:
+      - ./frontend/.env
+
+  apigateway:
+    image: rahys/apigateway-service:latest
+    ports:
+      - "5001:5000"
+    env_file:
+      - ./APIGateway/.env
+    depends_on:
+      - cart-service
+      - catalog-service
+      - user-service
+
+  user-service:
+    image: rahys/user-service:latest
+    ports:
+      - "5004:5000"
+    env_file:
+      - ./user-service/.env
+
+  cart-service:
+    image: rahys/cart-service:latest
+    ports:
+      - "5002:5000"
+    env_file:
+      - ./cart-service/.env
+    depends_on:
+      - catalog-service
+      - user-service
+
+  catalog-service:
+    image: rahys/catalog-service:latest
+    ports:
+      - "5003:5000"
+    env_file:
+      - ./catalog-service/.env
